@@ -2,7 +2,7 @@ trigger:
 - main   # Runs when you push to main branch
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'linux-hosted-agent'
 
 steps:
 - script: echo "🚀 Hello, Azure DevOps Pipeline is working!"
