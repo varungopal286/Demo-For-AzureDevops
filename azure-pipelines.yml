@@ -1,0 +1,19 @@
+trigger:
+- main   # Runs when you push to main branch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "🚀 Hello, Azure DevOps Pipeline is working!"
+  displayName: 'Print Hello Message'
+
+- script: |
+    echo "Listing files in current directory:"
+    ls -la
+  displayName: 'List Files'
+
+- script: |
+    echo "Current date and time:"
+    date
+  displayName: 'Show Date'
